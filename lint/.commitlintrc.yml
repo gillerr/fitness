@@ -1,0 +1,59 @@
+rules:
+  body-leading-blank:
+    - 2
+    - always
+  body-max-length:
+    - 2
+    - always
+    - 100
+  body-case:
+    - 2
+    - always
+    - sentence-case
+  footer-leading-blank:
+    - 2
+    - always
+  footer-max-length:
+    - 2
+    - always
+    - 100
+  header-case:
+    - 2
+    - always
+    - lower-case
+  header-full-stop:
+    - 2
+    - never
+    - .
+  header-max-length:
+    - 2
+    - always
+    - 100
+  scope-enum:
+    - 2
+    - always
+    - - toolchain
+  subject-empty:
+    - 2
+    - never
+  subject-full-stop:
+    - 2
+    - never
+    - .
+  subject-exclamation-mark:
+    - 2
+    - never
+  type-enum:
+    - 2
+    - always
+    - - feat # add, improve or remove a feature
+      - fix # fix a bug
+      - refactor # rewrite code without change its behavior
+      - format # format code (eslint, prettier, ...)
+      - test # add, improve or fix tests
+      - docs # add or improve the documentation
+      - deps # add, update or remove dependencies
+      - chore # change something that don't fit in any other type
+  type-empty:
+    - 2
+    - never

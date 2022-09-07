@@ -29,6 +29,8 @@
     "@angular-eslint/template-parser": "^14.0.3",
     "@angular/cli": "^14.2.2",
     "@angular/compiler-cli": "^14.2.1",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@types/node": "^16.11.58",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
