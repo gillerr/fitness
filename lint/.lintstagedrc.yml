@@ -1,0 +1,11 @@
+"*.{ts,js,html}":
+  [
+    eslint --fix --config lint/.eslintrc.yml,
+    prettier --write --config lint/.prettierrc.yml,
+  ]
+"*.{css,scss}":
+  [
+    stylelint --fix --allow-empty-input --config lint/.stylelintrc.yml,
+    prettier --write --config lint/.prettierrc.yml,
+  ]
+"*.{json,yml,md}": prettier --write --config lint/.prettierrc.yml

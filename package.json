@@ -6,7 +6,8 @@
     "build": "ng build",
     "lint": "ts-node lint/lint.ts",
     "format": "npm run lint -- --fix",
-    "update": "npm update --save --audit false && npm dedupe --audit false && npm audit fix && npm prune"
+    "update": "npm update --save --audit false && npm dedupe --audit false && npm audit fix && npm prune",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,8 @@
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "stylelint": "^14.11.0",
     "stylelint-config-prettier-scss": "^0.0.1",
