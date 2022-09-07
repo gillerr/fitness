@@ -4,6 +4,8 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
+    "lint": "ts-node lint/lint.ts",
+    "format": "npm run lint -- --fix",
     "update": "npm update --save --audit false && npm dedupe --audit false && npm audit fix && npm prune"
   },
   "private": true,
@@ -21,9 +23,21 @@
     "zone.js": "^0.11.8"
   },
   "devDependencies": {
+    "@angular-eslint/eslint-plugin": "^14.0.3",
+    "@angular-eslint/eslint-plugin-template": "^14.0.3",
+    "@angular-eslint/template-parser": "^14.0.3",
     "@angular/cli": "^14.2.2",
     "@angular/compiler-cli": "^14.2.1",
     "@types/node": "^16.11.58",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-scss": "^4.3.0",
     "ts-node": "^10.9.1",
     "typescript": "~4.7.2"
   }
