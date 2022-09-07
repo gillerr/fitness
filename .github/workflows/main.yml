@@ -1,0 +1,21 @@
+name: CI
+on:
+  - push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+      - run: echo "A ${{ github.event_name }} on ${{ github.ref }} occurred"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Build project
+        run: |
+          npm ci
+          npm run lint
